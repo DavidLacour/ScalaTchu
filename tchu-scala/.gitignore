@@ -1,0 +1,30 @@
+# sbt build files
+target/
+project/target/
+project/project/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.bsp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Metals (Scala LSP)
+.metals/
+.bloop/
+
+# Generated JAR files (keep in releases, not in repo)
+*.jar
+!project/*.jar
+
+# Log files
+*.log
+
+# Temp files
+*~
+*.swp
+*.swo

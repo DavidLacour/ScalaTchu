@@ -122,5 +122,7 @@ object Strings:
   // Player names
   def you: String = if currentLanguage == Language.French then "Joueur serveur" else "Server's player"
   def opponent: String = if currentLanguage == Language.French then "Joueur client" else "Client's player"
+  def player1: String = if currentLanguage == Language.French then "Joueur 1" else "Player 1"
+  def player2: String = if currentLanguage == Language.French then "Joueur 2" else "Player 2"
 
   def plural(value: Int): String = if math.abs(value) == 1 then "" else "s"

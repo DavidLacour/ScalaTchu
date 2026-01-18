@@ -35,6 +35,9 @@ class MainApp extends Application:
     if args.isEmpty then
       // No arguments - start as server (host)
       startServer()
+    else if args.size == 1 && args.get(0).toLowerCase == "local" then
+      // Local mode - both players in same JVM
+      startLocalGame()
     else if args.size == 1 || args.size == 2 then
       // Arguments - start as client
       val hostname = args.get(0)
@@ -42,6 +45,7 @@ class MainApp extends Application:
       startClient(hostname, port)
     else
       System.err.println("Usage:")
+      System.err.println("  Local:  sbt \"run local\"")
       System.err.println("  Server: sbt run")
       System.err.println("  Client: sbt \"run <hostname> [port]\"")
       System.exit(1)
@@ -115,4 +119,28 @@ class MainApp extends Application:
 
       println("Connected! Starting game...")
       client.run()
+    }).start()
+
+  private def startLocalGame(): Unit =
+    println("Starting local game with two players...")
+
+    // Run game in background thread to not block JavaFX Application Thread
+    new Thread(() => {
+      val player1: Player = new GraphicalPlayerAdapter()
+      val player2: Player = new GraphicalPlayerAdapter()
+
+      val players = Map[PlayerId, Player](
+        PlayerId.Player1 -> player1,
+        PlayerId.Player2 -> player2
+      )
+
+      val playerNames = Map[PlayerId, String](
+        PlayerId.Player1 -> Strings.player1,
+        PlayerId.Player2 -> Strings.player2
+      )
+
+      // Start game
+      val tickets = SortedBag.of(ChMap.tickets)
+      val rng = new Random()
+      Game.play(players, playerNames, tickets, rng)
     }).start()

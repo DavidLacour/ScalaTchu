@@ -28,7 +28,16 @@ lazy val root = project
     ),
 
     // Fork for JavaFX
-    fork := true
+    fork := true,
+
+    // Assembly settings for fat JAR
+    assembly / mainClass := Some("ch.epfl.tchu.gui.Main"),
+    assembly / assemblyJarName := "tchu.jar",
+    assembly / assemblyMergeStrategy := {
+      case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+      case "module-info.class" => MergeStrategy.discard
+      case x => MergeStrategy.first
+    }
   )
 
 // Detect OS for JavaFX
