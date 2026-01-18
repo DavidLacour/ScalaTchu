@@ -1,0 +1,62 @@
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 107 products, 40 sources, 4 libraries
+[debug] current source = Set(${BASE}/src/main/scala/ch/epfl/tchu/game/StationConnectivity.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/StationPartition.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/GraphicalPlayer.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Player.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Color.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/PublicPlayerState.scala, ${BASE}/src/main/scala/ch/epfl/tchu/net/Serdes.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/ChMap.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Card.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Station.scala, ${BASE}/src/main/scala/ch/epfl/tchu/net/MessageId.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Deck.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/Strings.scala, ${BASE}/src/main/scala/ch/epfl/tchu/Preconditions.scala, ${BASE}/src/main/scala/ch/epfl/tchu/SortedBag.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Constants.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/CardUtils.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/Main.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/CardState.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Game.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/Info.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/GraphicalPlayerAdapter.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/PlayerId.scala, ${BASE}/src/main/scala/ch/epfl/tchu/net/Serde.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/ObservableGameState.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Trip.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/PlayerState.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Ticket.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/PublicGameState.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/InfoViewCreator.scala, ${BASE}/src/main/scala/ch/epfl/tchu/net/RemotePlayerClient.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Trail.scala, ${BASE}/src/main/scala/ch/epfl/tchu/net/RemotePlayerProxy.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/PublicCardState.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/DecksViewCreator.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/ActionHandlers.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/CardBagStringConverter.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/Route.scala, ${BASE}/src/main/scala/ch/epfl/tchu/gui/MapViewCreator.scala, ${BASE}/src/main/scala/ch/epfl/tchu/game/GameState.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/ch/epfl/tchu/game/Trip.scala), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] 
+[debug] Initial source changes:
+[debug] 	removed: Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(${BASE}/src/main/scala/ch/epfl/tchu/game/Trip.scala)
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(ch.epfl.tchu.game.Trip)
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(ch.epfl.tchu.game.Trip)
+[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/ch/epfl/tchu/game/Trip.scala)
+[debug] Initial set of included nodes: ch.epfl.tchu.game.Trip
+[debug] compilation cycle 1
+[info] compiling 1 Scala source to /home/david-lacour/Documents/Tchu/tchu-scala/target/scala-3.8.0/classes ...
+[debug] Returning already retrieved and compiled bridge: /home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.8.0/scala3-sbt-bridge-3.8.0.jar.
+[debug] [zinc] Running cached compiler 6a94a84d for Scala Compiler version 3.8.0
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-deprecation
+[debug] 	-feature
+[debug] 	-unchecked
+[debug] 	-new-syntax
+[debug] 	-indent
+[debug] 	-classpath
+[debug] 	/home/david-lacour/Documents/Tchu/tchu-scala/target/scala-3.8.0/classes:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.8.0/scala3-library_3-3.8.0.jar:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/21/javafx-controls-21-linux.jar:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-fxml/21/javafx-fxml-21-linux.jar:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/21/javafx-graphics-21-linux.jar:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/21/javafx-base-21-linux.jar:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/3.8.0/scala-library-3.8.0.jar:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/21/javafx-graphics-21.jar:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/21/javafx-controls-21.jar:/home/david-lacour/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/21/javafx-base-21.jar
+[debug] Scala compilation took 2.124877524 s
+[info] done compiling
+[debug] New invalidations:
+[debug] Initial set of included nodes: 
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] Final step, transitive dependencies:
+[debug] 	Set()
+[debug] Initial set of included nodes: ch.epfl.tchu.game.Trip
+[debug] Including ch.epfl.tchu.game.Ticket by ch.epfl.tchu.game.Trip
+[debug] Including ch.epfl.tchu.game.Player by ch.epfl.tchu.game.Ticket
+[debug] Including ch.epfl.tchu.net.RemotePlayerClient by ch.epfl.tchu.game.Player
+[debug] Including ch.epfl.tchu.gui.MainApp by ch.epfl.tchu.net.RemotePlayerClient
+[debug] Including ch.epfl.tchu.game.Game by ch.epfl.tchu.game.Player
+[debug] Including ch.epfl.tchu.gui.GraphicalPlayerAdapter by ch.epfl.tchu.game.Player
+[debug] Including ch.epfl.tchu.net.RemotePlayerProxy by ch.epfl.tchu.game.Player
+[debug] Including ch.epfl.tchu.gui.ActionHandlers by ch.epfl.tchu.game.Ticket
+[debug] Including ch.epfl.tchu.gui.MapViewCreator$.CardChooser by ch.epfl.tchu.gui.ActionHandlers
+[debug] Including ch.epfl.tchu.gui.GraphicalPlayer by ch.epfl.tchu.gui.MapViewCreator$.CardChooser
+[debug] Including ch.epfl.tchu.gui.DecksViewCreator by ch.epfl.tchu.gui.ActionHandlers
+[debug] Including ch.epfl.tchu.gui.MapViewCreator by ch.epfl.tchu.gui.ActionHandlers
+[debug] Including ch.epfl.tchu.gui.ObservableGameState by ch.epfl.tchu.game.Ticket
+[debug] Including ch.epfl.tchu.gui.InfoViewCreator by ch.epfl.tchu.gui.ObservableGameState
+[debug] Including ch.epfl.tchu.gui.ActionHandlers$.ChooseTicketsHandler by ch.epfl.tchu.game.Ticket
+[debug] Including ch.epfl.tchu.game.ChMap by ch.epfl.tchu.game.Ticket
+[debug] Including ch.epfl.tchu.net.Serdes by ch.epfl.tchu.game.ChMap
+[debug] Including ch.epfl.tchu.game.GameState by ch.epfl.tchu.game.Ticket
+[debug] Including ch.epfl.tchu.game.PlayerState by ch.epfl.tchu.game.Ticket
+[debug] Invalidated macros due to upstream dependencies change: Set()
+[debug] No classes were invalidated.

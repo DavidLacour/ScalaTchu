@@ -1,0 +1,87 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.10.7 (Ubuntu Java 21.0.9)
+[debug] Load.defaultLoad until apply took 57.219505ms
+[debug]           Load.loadUnit: plugins took 52.796803ms
+[debug]           Load.loadUnit: defsScala took 0.196707ms
+[debug] [Loading] Scanning directory /home/david-lacour/Documents/Tchu/tchu-scala/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/david-lacour/Documents/Tchu/tchu-scala/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 13.041698 ms
+[debug]               Load.resolveProject(tchu-scala-build) took 36.55345ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id tchu-scala-build, base: /home/david-lacour/Documents/Tchu/tchu-scala/project, plugins: List(<none>))) took 67.05607ms
+[debug] [Loading] Done in /home/david-lacour/Documents/Tchu/tchu-scala/project, returning: (tchu-scala-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 80.907735ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.108459ms
+[debug]         Load.loadUnit(file:/home/david-lacour/Documents/Tchu/tchu-scala/project/, ...) took 137.84233ms
+[debug]       Load.apply: load took 257.856943ms
+[debug]       Load.apply: resolveProjects took 3.580001ms
+[debug]       Load.apply: finalTransforms took 36.822807ms
+[debug]       Load.apply: config.delegates took 4.008493ms
+[debug]       Load.apply: Def.make(settings)... took 223.43161ms
+[debug]       Load.apply: structureIndex took 54.090489ms
+[debug]       Load.apply: mkStreams took 0.931864ms
+[info] loading project definition from /home/david-lacour/Documents/Tchu/tchu-scala/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 1101.283182ms
+[debug]     Load.loadUnit: defsScala took 0.003283ms
+[debug] [Loading] Scanning directory /home/david-lacour/Documents/Tchu/tchu-scala
+[debug]       Load.loadUnit: mkEval took 2.634022ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.696304 ms
+[info] loading settings for project root from build.sbt...
+[debug]         Load.resolveProject(root) took 1.650097ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/david-lacour/Documents/Tchu/tchu-scala, plugins: List(<none>))) took 4.265801ms
+[debug] [Loading] Done in /home/david-lacour/Documents/Tchu/tchu-scala, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 102.674381ms
+[debug]     Load.loadUnit: cleanEvalClasses took 1.968752ms
+[debug]   Load.loadUnit(file:/home/david-lacour/Documents/Tchu/tchu-scala/, ...) took 1206.879698ms
+[debug] Load.apply: load took 1216.779878ms
+[debug] Load.apply: resolveProjects took 0.093826ms
+[debug] Load.apply: finalTransforms took 9.980795ms
+[debug] Load.apply: config.delegates took 0.448186ms
+[debug] Load.apply: Def.make(settings)... took 43.401194ms
+[debug] Load.apply: structureIndex took 27.593801ms
+[debug] Load.apply: mkStreams took 0.002962ms
+[info] set current project to tchu-scala (in build file:/home/david-lacour/Documents/Tchu/tchu-scala/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(runMain ch.epfl.tchu.gui.Main, None, None)
+[debug] Evaluating tasks: Compile / runMain
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
